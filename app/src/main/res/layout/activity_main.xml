@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@drawable/background"
+        tools:context=".view.MainActivity">
+
+    <TextView
+            android:id="@+id/txt_today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="DD/MM/AAAA!"
+            android:padding="5dp"
+    />
+    <View
+            android:id="@+id/txt_nada"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txt_today"
+            android:background="@color/colorPrimaryDark"
+    />
+    <TextView
+            android:id="@+id/txt_lembrete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:layout_below="@id/txt_nada"
+            android:text="Dias restantes para o final do ano"
+    />
+    <TextView
+            android:id="@+id/txt_daysLeft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textSize="50sp"
+            android:textColor="#22aaff"
+            android:layout_below="@id/txt_lembrete"
+            android:text="XXX Dias"
+    />
+    <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="SIM/NÃO/NÃO CONFIRMADO"
+            android:textColor="@android:color/background_light"
+            android:layout_alignParentBottom="true"
+    />
+
+</RelativeLayout>
